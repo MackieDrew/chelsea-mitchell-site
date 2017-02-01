@@ -1,9 +1,12 @@
 import React from 'react'
-import Logo from './Logo'
+import '../../scss/components/FrontView.scss'
+import Slideshow from './Slideshow'
+import FrontOverlay from './FrontOverlay'
 
 const FrontView = (props) => 
-  <div className="container-fluid header">
-    <Logo />
+  <div className="FrontView row">
+    <Slideshow />
+    <FrontOverlay />
   </div>
 
 export default FrontView;

@@ -1,5 +1,10 @@
-.header {
+@import '../constants.scss';
+
+.FrontView {
   background: $darkgrey;
-  margin: -20px;
-  padding: 40px;
+  padding: 20px;
+}
+
+.Logo {
+  max-width: 80%;
 }
