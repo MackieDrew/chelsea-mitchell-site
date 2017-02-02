@@ -2,6 +2,7 @@ import React from 'react'
 import '../../scss/components/ContentView.scss'
 import Slide1 from '../../image/slideshow/1.png'
 import Slide2 from '../../image/slideshow/2.png'
+import SocialBadge from 'react-social-badge'
 
 const ContentView = (props) => 
   <div className="ContentView row">
@@ -20,11 +21,9 @@ const ContentView = (props) =>
         </ul>
       </div>
       <div className="Social row">
-        <ul>
-          <li><a href="#">Tumblr</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
+        <SocialBadge url="http://tumblr.com/" />
+        <SocialBadge url="http://instagram.com/" />
+        <SocialBadge url="http://twitter.com/" />
       </div>
     </div>
     <div className="ContentContainer col-md-8 col-sm-9">
@@ -34,7 +33,6 @@ const ContentView = (props) =>
         <img src={Slide2} alt="Slide2" className="Portfolio__Card img-fluid" />
       </div>
       <div id="resume" className="Resume row">
-        Resume
       </div>
       <div id="contact" className="Contact row">
         Contact
