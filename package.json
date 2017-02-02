@@ -52,9 +52,7 @@
     "bootstrap": "^4.0.0-alpha.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-fontawesome": "^1.5.0",
-    "react-social-badge": "^1.0.1",
-    "react-tabs": "^0.8.2"
+    "react-social-badge": "^1.0.1"
   },
   "scripts": {
     "start": "node scripts/start.js",
