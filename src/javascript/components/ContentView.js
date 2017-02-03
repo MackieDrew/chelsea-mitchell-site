@@ -2,7 +2,7 @@ import React from 'react'
 import '../../scss/components/ContentView.scss'
 import Slide1 from '../../image/slideshow/1.png'
 import Slide2 from '../../image/slideshow/2.png'
-import SocialBar from 'react-social-badge'
+import SocialBar from './SocialBar'
 
 const ContentView = (props) => 
   <div className="ContentView row">
