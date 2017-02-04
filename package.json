@@ -1,0 +1,47 @@
+{
+  "name": "chelsea-mitchell-site",
+  "version": "2.0.0",
+  "description": "Chelsea Mitchell's personal portfolio site.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "none",
+    "build": "webpack",
+    "deploy": "npm run build && "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MackieDrew/chelsea-mitchell-site.git"
+  },
+  "keywords": [
+    "website",
+    "react",
+    "redux",
+    "portfolio",
+    "webpack"
+  ],
+  "author": "Mackie Drew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MackieDrew/chelsea-mitchell-site/issues"
+  },
+  "homepage": "https://github.com/MackieDrew/chelsea-mitchell-site#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.13.0",
+    "css-loader": "^0.23.1",
+    "ghpages": "0.0.8",
+    "postcss-loader": "^0.9.1",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  }
+}
