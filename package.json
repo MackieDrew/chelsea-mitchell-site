@@ -7,7 +7,7 @@
     "start": "webpack-dev-server",
     "test": "none",
     "build": "webpack",
-    "deploy": "npm run build && "
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/MackieDrew/chelsea-mitchell-site/issues"
   },
-  "homepage": "https://github.com/MackieDrew/chelsea-mitchell-site#readme",
+  "homepage": "https://mackiedrew.github.io/chelsea-mitchell-site",
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
@@ -37,7 +37,7 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-2": "^6.13.0",
     "css-loader": "^0.23.1",
-    "ghpages": "0.0.8",
+    "gh-pages": "^0.12.0",
     "postcss-loader": "^0.9.1",
     "react-hot-loader": "^3.0.0-beta.6",
     "style-loader": "^0.13.1",
