@@ -7,9 +7,13 @@ node_modules
 coverage
 
 # production
-build
+# build
+# Uncommented so gh-pages can access it
 
 # misc
 .DS_Store
 .env
 npm-debug.log
+
+# secure files
+api-keys.txt

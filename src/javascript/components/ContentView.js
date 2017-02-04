@@ -2,6 +2,7 @@ import React from 'react'
 import '../../scss/components/ContentView.scss'
 import Slide1 from '../../image/slideshow/1.png'
 import Slide2 from '../../image/slideshow/2.png'
+import SocialBar from './SocialBar'
 
 const ContentView = (props) => 
   <div className="ContentView row">
@@ -19,13 +20,7 @@ const ContentView = (props) =>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div className="Social row">
-        <ul>
-          <li><a href="#">Tumblr</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </div>
+      <SocialBar />
     </div>
     <div className="ContentContainer col-md-8 col-sm-9">
       <div id="portfolio" className="Portfolio row">
@@ -34,7 +29,6 @@ const ContentView = (props) =>
         <img src={Slide2} alt="Slide2" className="Portfolio__Card img-fluid" />
       </div>
       <div id="resume" className="Resume row">
-        Resume
       </div>
       <div id="contact" className="Contact row">
         Contact
