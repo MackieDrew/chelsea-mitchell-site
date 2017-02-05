@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './App.css'
+import Landing from '../Landing/Landing'
+import './App.scss'
 
-const App = () => (
-  <div className={styles.app}>
-    <h2>Hello, </h2>
+const App = () =>
+  <div className="app">
+    <Landing />
   </div>
-);
 
-export default App;
+export default App

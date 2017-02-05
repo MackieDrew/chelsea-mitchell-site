@@ -60,6 +60,15 @@ const config = {
           'postcss-loader',
         ],
       },
+      {
+        test: /\.(png|jpg|gif)$/, 
+        exclude: /node_modules/,
+        loader: 'file-loader?name=images/[name].[ext]'
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style-loader", "css-loader", "sass-loader"]
+      }
     ],
   },
 
