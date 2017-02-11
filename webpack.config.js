@@ -31,6 +31,7 @@ const config = {
   context: resolve(__dirname, 'src'),
 
   devtool: 'inline-source-map',
+  watch: true,
 
   devServer: {
     hot: true,

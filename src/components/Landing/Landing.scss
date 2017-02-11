@@ -3,6 +3,22 @@
     margin: 0;
 }
 
-.landing__top-of-page {
-    height: 90vh;
+.landing__growing-portion {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 200px;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.logo {
+    display: block;
+    margin: auto 0;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+
 }
