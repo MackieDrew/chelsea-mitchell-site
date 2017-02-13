@@ -13,7 +13,7 @@ const Landing = () =>
     
     <Row className="landing__growing-portion-mobile hidden-lg">
       <Col>
-        <img alt="Chelsea" className='logo' src={logo}></img>
+        <img alt="Chelsea Mitchell Logo" className='logo' src={logo}></img>
       </Col>
     </Row>
 
