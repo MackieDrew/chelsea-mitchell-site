@@ -31,8 +31,7 @@ const config = {
   context: resolve(__dirname, 'src'),
 
   devtool: 'inline-source-map',
-  watch: true,
-
+  watch: false,
   devServer: {
     hot: true,
     // enable HMR on the server

@@ -1,4 +1,45 @@
+@import "../../constants.scss";
+
 .content {
-    background-color: pink;
+    background-color: white;
     margin: 0;
+}
+
+.section-list {
+    display: block;
+    list-style: none;
+    margin: 1vh 0;
+    padding: 0;
+    
+    li {
+        margin: 0;
+        font-size: 1.5em;
+        display: block;
+
+        a {
+            color: $primary-text;
+            text-decoration: none;
+        }
+    }
+}
+
+.section-list-mobile {
+    @extend .section-list;
+    text-align: center;
+    transition: $ui-transition;
+    li {
+        transition: $ui-transition;
+        width: 100%;
+        font-size: 4em;
+        padding: 10px 0;
+    }
+
+    li:hover, li:active {
+        transition: $ui-transition;
+        background-color: $primary-text;
+        a {
+            color: $background-color;
+            transition: $ui-transition;
+        }
+    }
 }
