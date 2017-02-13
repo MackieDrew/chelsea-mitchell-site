@@ -1,6 +1,7 @@
 import React from 'react'
 import './Content.scss'
 import { Grid, Row, Col } from 'react-bootstrap'
+import Portfolio from '../Portfolio/Portfolio'
 
 
 const ListLink = (props) => {
@@ -42,7 +43,9 @@ const Content = () =>
         </ul>
       </Col>
 
-      <Col lg={9} className="images">Portfolio Images/Videos</Col>
+      <Col lg={9} className="images">
+        <Portfolio />
+      </Col>
     </Row>
   </Grid>
 
