@@ -1,18 +1,42 @@
 import React from 'react'
 import './Portfolio.scss'
 import { Grid, Row, Col } from 'react-bootstrap'
+import Video from '../Video/Video'
 
+const PortfolioItem = (props) => {
+
+  const {url, title, description, type} = props
+
+  const content = type === 'video' ?
+    <Video className="portfolio-video" /> :
+    <img className="portfolio-image" src={url} alt={`${title} - ${description}`} />
+
+
+
+  return (
+    <Row>
+      <Col md={12}>
+        {content}
+        <div className="portfolio-image__caption">
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </div>
+      </Col>
+    </Row>
+  )
+}
 
 const PortfolioImage = (props) =>
-  <Row>
-    <Col md={12}>
-      <img className="portfolio-image" src={props.url} alt={`${props.title} - ${props.description}`} />
-      <div class="portfolio-image__caption">
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
-      </div>
-    </Col>
-  </Row>
+  <PortfolioItem
+    {...props}
+    type='image'
+  />
+
+const PortfolioVideo = (props) =>
+  <PortfolioItem
+    {...props}
+    type='video'
+  />
 
 const Portfolio = (props) => {
   return (
@@ -22,6 +46,7 @@ const Portfolio = (props) => {
         url="http://i.imgur.com/sFdTvpL.gif"
         description="This is some random image for test purposes."
       />
+      <PortfolioVideo />
     </Grid>
   )
 }
