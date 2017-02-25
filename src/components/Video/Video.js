@@ -3,7 +3,7 @@ import './Video.scss'
 import { Grid, Row, Col } from 'react-bootstrap'
 
 const Video = (props) =>
-<div className={className.style} style={props.style}>
+<div className={props.className} style={props.style}>
   <iframe
     width="100%"
     height="auto"

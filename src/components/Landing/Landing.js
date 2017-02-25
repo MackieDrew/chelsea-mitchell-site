@@ -7,7 +7,7 @@ const Landing = () =>
   <Grid fluid className="landing">
     <Row className="landing__growing-portion visible-lg">
       <Col>
-        <img alt="Chelsea" className='logo' src={logo}></img>
+        <img alt="Chelsea Mitchell Logo" className='logo' src={logo}></img>
       </Col>
     </Row>
     
