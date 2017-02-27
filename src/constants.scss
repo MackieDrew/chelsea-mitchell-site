@@ -1,4 +1,33 @@
+// Colours
 $primary-text: rgba(60, 60, 60, 1.0);
 $secondary-text: rgba(80, 80, 80, 1.0);
 $background-color: rgba(255, 255, 255, 1.0);
 $ui-transition: 0.3s;
+
+// Break points
+$sm-break: 768px;
+$md-break: 992px;
+$lg-break: 1200px;
+
+// Taken from: https://goo.gl/g3XCtg
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: $sm-break - 1) { @content; }
+  }
+ 
+  @else if $class == sm {
+    @media (min-width: $sm-break) { @content; }
+  }
+ 
+  @else if $class == md {
+    @media (min-width: $md-break) { @content; }
+  }
+ 
+  @else if $class == lg {
+    @media (min-width: $lg-break) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}

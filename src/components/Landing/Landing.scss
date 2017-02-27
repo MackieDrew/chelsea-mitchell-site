@@ -1,8 +1,8 @@
 @import "../../constants.scss";
 
 .landing {
-    background-color: $primary-text;
     margin: 0;
+    background-color: $primary-text;
 }
 
 .landing__growing-portion {
@@ -11,21 +11,27 @@
     align-content: center;
     justify-content: center;
     width: 100%;
+    margin: 0;
     min-height: 200px;
-    height: 100vh;
+    height: 50vh;
     max-height: 100vh;
     overflow: hidden;
-}
 
-.landing__growing-portion-mobile {
-    @extend .landing__growing-portion;
-    height: 50vh;
-}
+    .logo {
+        display: flex;
+        margin: auto 0;
+        width: 100%;
+        max-width: 450px;
+        height: 100%;
+        transition: all 0.5s ease;
+    }
 
-.logo {
-    display: block;
-    margin: auto 0;
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
+    @include breakpoint(md) {
+        height: 100vh;
+        .logo {
+            max-width: 600px;
+        }
+    }
+
+
 }

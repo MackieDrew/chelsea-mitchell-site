@@ -24,7 +24,6 @@ class App extends React.Component {
     return (
       <div className="app">
         <Landing />
-        <Content />
       </div>
     )
   }
