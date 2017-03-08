@@ -22,8 +22,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="app">
-        <Landing />
+      <div className="container-fluid app">
+        <div className="row">
+          <Landing />
+        </div>
+        <div className="row">
+          <Content />
+        </div>
       </div>
     )
   }
