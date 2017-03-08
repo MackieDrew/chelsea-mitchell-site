@@ -15,18 +15,23 @@
         max-height: 100vh;
         overflow: hidden;
 
+        transition: all 0.5s ease;
+
         .logo {
+            opacity: 0.5;
             display: flex;
             margin: auto 0;
             width: 100%;
             max-width: 450px;
             height: 100%;
             transition: all 0.5s ease;
+            padding: 50px;
         }
 
         @include breakpoint(md) {
-            height: 100vh;
-            .logo {
+            height: 200vh;
+            transition: all 1s ease;
+            .logo path {
                 max-width: 600px;
             }
         }

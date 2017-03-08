@@ -61,6 +61,21 @@ const config = {
         ],
       },
       {
+        test: /\.svg$/,
+        use: [
+           'babel-loader',
+          {
+            loader: 'react-svg-loader',
+            query: {
+              svgo: {
+                plugins: [{removeTitle: true}],
+                floatPrecision: 2
+              }
+            }
+          }
+        ]
+      },
+      {
         test: /\.(png|jpg|gif)$/, 
         exclude: /node_modules/,
         loader: 'file-loader?name=images/[name].[ext]'

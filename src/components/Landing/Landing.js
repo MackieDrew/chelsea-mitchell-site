@@ -1,15 +1,12 @@
 import React from 'react'
 import './Landing.scss'
-import logo from '../../images/logo.png'
+import Logo from '../../images/logo.svg'
 
 const Landing = () =>
   <div className="container-fluid landing">
     <div className="row overlay">
-      <div className="col">
-        <img alt="Chelsea Mitchell Logo" className='logo' src={logo}></img>
-      </div>
+      <Logo className='col logo' />
     </div>
-
   </div>
 
 export default Landing
