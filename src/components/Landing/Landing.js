@@ -1,22 +1,12 @@
 import React from 'react'
 import './Landing.scss'
-import { Grid, Row, Col } from 'react-bootstrap'
-import logo from '../../images/logo.png'
+import Logo from '../../images/logo.svg'
 
 const Landing = () =>
-  <Grid fluid className="landing">
-    <Row className="landing__growing-portion visible-lg">
-      <Col>
-        <img alt="Chelsea Mitchell Logo" className='logo' src={logo}></img>
-      </Col>
-    </Row>
-    
-    <Row className="landing__growing-portion-mobile hidden-lg">
-      <Col>
-        <img alt="Chelsea Mitchell Logo" className='logo' src={logo}></img>
-      </Col>
-    </Row>
-
-  </Grid>
+  <div className="container-fluid landing">
+    <div className="row overlay">
+      <Logo className='col logo' />
+    </div>
+  </div>
 
 export default Landing
